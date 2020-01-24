@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+        </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row" id="search"> 
+                <label for="searchFormControlInput1">Search for a City: </label>
+                <div class="input-group-append">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-secondary" type="button" id="one">
+                    <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row" id="history">
+                
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="current-weather">
+                        <h4 id="name"></h4>
+                            <i id="header-image"></i>
+                            <!-- <span id="cur-date"></span> -->
+                        <p id="temp"><i></i>
+                        </p>
+                        <p id="humidity"></p>
+                        <p id="wind"></p>
+                        <p id="uv">UV Index: <button id="uv-button"></button></p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4 id="five-day">5-Day Forecast:</h4>
+            </div>
+            <div class="row" id="future">
+                
+                <div class="col-md-2" id="for-column-one">
+                    <div class="day">
+                        <p class="date1"></p>
+                        <p class="img1"></p>
+                        <p class="forecast1"></p>
+                        <p class="humid1"></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2"id="for-column-one">
+                    <div class="day">
+                        <p class="date2"></p>
+                        <p class="img2"></p>
+                        <p class="forecast2"></p>
+                        <p class="humid2"></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2"id="for-column-one">
+                    <div class="day">
+                        <p class="date3"></p>
+                        <p class="img3"></p>
+                        <p class="forecast3"></p>
+                        <p class="humid3"></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2"id="for-column-one">
+                    <div class="day">
+                        <p class="date4"></p>
+                        <p class="img4"></p>
+                        <p class="forecast4"></p>
+                        <p class="humid4"></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2"id="for-column-one">
+                    <div class="day">
+                        <p class="date5"></p>
+                        <p class="img5"></p>
+                        <p class="forecast5"></p>
+                        <p class="humid5"></p>
+                        
+                    </div>
+                </div>
+
+            </div>
+                
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="moment.js"></script>
+    <!-- <script src="cityList.js"></script> -->
+    <script>
+        moment().format();
+    </script>
+</body>
+</html>
