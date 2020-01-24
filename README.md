@@ -50,5 +50,5 @@ HTML 5,CSS 3, jQuery 3.4.1
 
 ## Screenshots:
 
-![ ](Weather_Forecast)
+![ ](Weather_Forecast.png)
 
