@@ -23,6 +23,8 @@ $(document).ready(function(){
             for(var index=0;index<getStorage.length;index++){
                 if(getStorage[index].city===cityName){
                     temp=true;
+                    getStorage.splice(index,1);
+                    getStorage.push(obj);
                     
             }
 
